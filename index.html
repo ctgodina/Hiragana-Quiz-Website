@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Hiragana Quiz</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Hiragana Quiz</h1>
+
+        <!-- Instructions -->
+        <div id="instructions-section">
+            <div class="instructions">
+                <h1>Quiz Instructions</h1>
+                <p>Please fill in the corresponding romaji for each hiragana character.</p>
+                <p>Click the "Generate Quiz" button to create a quiz.</p>
+                <p>After filling out the quiz, click the "Submit" button to see the results.</p>
+            </div>
+        </div>
+
+        <!-- Number of Questions -->
+        <div id="settings-section">
+            <label for="num-questions">Number of Questions:</label>
+            <input type="number" id="num-questions" min="1" max="10" value="5">
+        </div>
+
+        <!-- Generate and Submit Buttons -->
+        <div class="buttons">
+            <button id="generate-button">Generate Quiz</button>
+        </div>
+
+        <!-- Quiz Section -->
+        <div id="quiz-section" style="display: none;">
+            <h2 id="quiz-title">Quiz</h2>
+            <div id="questions-container"></div>
+            <button id="submit-button">Submit</button>
+        </div>
+
+        <!-- Results Section -->
+        <div id="results-section" style="display: none;">
+            <h2 id="results-title">Results</h2>
+            <table id="results-table"></table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
